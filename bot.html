@@ -1,0 +1,597 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>test html5</title>
+  <script>
+  function warn() {
+  var pin1 = prompt("This site is meant for learning purposes.\nExploit it\n\n\n\nEnter the pin to open");
+  if (pin1 == 1243) {
+    // You can replace this with the desired action, e.g., opening a new page.
+    window.open("https://arttunel.netlify.app/");
+  } else {
+    var xy = prompt("Wrong pin, try again");
+    if (xy != 1243) {
+      function deny() {
+        var div = document.createElement("div");
+        div.style.position = "fixed";
+        div.style.top = "0";
+        div.style.bottom = "0";
+        div.style.right = "0";
+        div.style.left = "0";
+        div.style.backgroundColor = "black";
+        div.style.color = "red";
+        div.style.textAlign = "center";
+        div.innerHTML = "<h1>ACCESS DENIED<br><br><br>SITE LOCKED</h1>";
+        document.body.appendChild(div);
+      }
+      deny();
+    } else {
+      alert("Access granted!");
+      window.open("https://example.com", "_blank");
+    }
+  }
+}
+warn();
+  </script>
+</head>
+<body>
+  <div class = "container">
+   <div class = "row" >
+   
+      <div class = "col-xs-6 col-sm-3" style = "background-color: #dedef8;
+         box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+         
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      </div>
+      
+      <div class = "col-xs-6 col-sm-3" style = "background-color: #dedef8;
+         box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+         
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+            enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+            nisi ut aliquip ex ea commodo consequat.</p>
+         
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
+            eiusmod tempor incididunt ut.</p>
+      </div>
+
+      <div class = "clearfix visible-xs"></div>
+      
+      <div class = "col-xs-6 col-sm-3" style = "background-color: #dedef8;
+         box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+         
+         <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+            laboris nisi ut aliquip ex ea commodo consequat.</p>
+      </div>
+      
+      <div class = "col-xs-6 col-sm-3" style = "background-color: #dedef8;
+         box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+         
+         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut 
+            enim ad minim</p>
+      </div>
+      
+   </div>
+</div>
+  <h1>Address lesson</h1>
+  <address>
+   <strong>Some Company, Inc.</strong><br>
+   007 street<br>
+   Some City, State XXXXX<br>
+   <abbr title = "Phone">P:</abbr> (123) 456-7890
+</address>
+
+<address>
+   <strong>Full Name</strong><br>
+   <a href = "mailto:#">mailto@somedomain.com</a>
+</address>
+  <h1>Blockquote lesson</h1>
+  <blockquote>
+   <p>This is a default blockquote example. This is a default 
+      blockquote example. This is a default blockquote 
+      example.This is a default blockquote example. This is a 
+      default blockquote example.</p>
+</blockquote>
+
+<blockquote>
+   This is a blockquote with a source title.
+   <small>Someone famous in <cite title = "Source Title">Source Title</cite></small>
+</blockquote>
+
+<blockquote class = "pull-right">This is a blockquote aligned to the right.
+   <small>Someone famous in <cite title = "Source Title">Source Title</cite></small>
+</blockquote>
+  <h1>Lists lesson</h1>
+  <h4>Example of Ordered List</h4>
+<ol>
+   <li>Item 1</li>
+   <li>Item 2</li>
+   <li>Item 3</li>
+   <li>Item 4</li>
+</ol>
+
+<h4>Example of UnOrdered List</h4>
+
+<ul>
+   <li>Item 1</li>
+   <li>Item 2</li>
+   <li>Item 3</li>
+   <li>Item 4</li>
+</ul>
+
+<h4>Example of Unstyled List</h4>
+
+<ul class = "list-unstyled">
+   <li>Item 1</li>
+   <li>Item 2</li>
+   <li>Item 3</li>
+   <li>Item 4</li>
+</ul>
+
+<h4>Example of Inline List</h4>
+
+<ul class = "list-inline">
+   <li>Item 1</li>
+   <li>Item 2</li>
+   <li>Item 3</li>
+   <li>Item 4</li>
+</ul>
+
+<h4>Example of Definition List</h4>
+
+<dl>
+   <dt>Description 1</dt>
+   <dd>Item 1</dd>
+   <dt>Description 2</dt>
+   <dd>Item 2</dd>
+</dl>
+
+<h4>Example of Horizontal Definition List</h4>
+
+<dl class = "dl-horizontal">
+   <dt>Description 1</dt>
+   <dd>Item 1</dd>
+   <dt>Description 2</dt>
+   <dd>Item 2</dd>
+</dl>
+  <h1>Table leason</h1>
+  <div class = "table-responsive">
+   <table class = "table">
+      <caption>Responsive Table Layout</caption>
+      
+      <thead>
+         <tr>
+            <th>Product</th>
+            <th>Payment Date</th>
+            <th>Status</th>
+         </tr>
+      </thead>
+      
+      <tbody>
+         <tr>
+            <td>Product1</td>
+            <td>23/11/2013</td>
+            <td>Pending</td>
+         </tr>
+         
+         <tr>
+            <td>Product2</td>
+            <td>10/11/2013</td>
+            <td>Delivered</td>
+         </tr>
+         
+         <tr>
+            <td>Product3</td>
+            <td>20/10/2013</td>
+            <td>In Call to confirm</td>
+         </tr>
+         
+         <tr>
+            <td>Product4</td>
+            <td>20/10/2013</td>
+            <td>Declined</td>
+         </tr>
+      </tbody>
+   </table>
+</div>  	
+  <h1>Form lesson</h1>
+  <form role = "form">
+
+   <div class = "form-group">
+      <label for = "name">Name</label>
+      <input type = "text" class = "form-control" id = "name" placeholder = "Enter Name">
+   </div>
+   
+   <div class = "form-group">
+      <label for = "inputfile">File input</label>
+      <input type = "file" id = "inputfile">
+      <p class = "help-block">Example block-level help text here.</p>
+   </div>
+   
+   <div class = "checkbox">
+      <label><input type = "checkbox"> Check me out</label>
+   </div>
+   
+   <button type = "submit" class = "btn btn-default">Submit</button>
+</form>
+  <h2>Form inline</h2>
+  <form class = "form-inline" role = "form">
+   
+   <div class = "form-group">
+      <label class = "sr-only" for = "name">Name</label>
+      <input type = "text" class = "form-control" id = "name" placeholder = "Enter Name">
+   </div>
+   
+   <div class = "form-group">
+      <label class = "sr-only" for = "inputfile">File input</label>
+      <input type = "file" accept="image/*" capture="camera" preload="auto" width="200px" height="200px">
+   </div>
+   
+   <div class = "checkbox">
+      <label><input type = "checkbox"> Check me out</label>
+   </div>
+   
+   <button type = "submit" class = "btn btn-default" onsubmit="mailto:(atuhaumar@gmail.com)">Submit</button>
+</form>
+  <!-- Standard button -->
+<button type = "button" class = "btn btn-default">Default Button</button>
+
+<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+<button type = "button" class = "btn btn-primary">Primary Button</button>
+
+<!-- Indicates a successful or positive action -->
+<button type = "button" class = "btn btn-success">Success Button</button>
+
+<!-- Contextual button for informational alert messages -->
+<button type = "button" class = "btn btn-info">Info Button</button>
+
+<!-- Indicates caution should be taken with this action -->
+<button type = "button" class = "btn btn-warning">Warning Button</button>
+
+<!-- Indicates a dangerous or potentially negative action -->
+<button type = "button" class = "btn btn-danger">Danger Button</button>
+
+<!-- Deemphasize a button by making it look like a link while maintaining button behavior -->
+<button type = "button" class = "btn btn-link">Link Button</button>
+  <p>
+   <button type = "button" class = "btn btn-default btn-lg">
+      Default Button
+   </button>
+   
+   <button type = "button" class = "btn btn-default btn-lg" disabled = "disabled">
+      Disabled Button
+   </button>
+</p>
+
+<p>
+   <button type = "button" class = "btn btn-primary btn-lg">
+      Primary button
+   </button>
+   
+   <button type = "button" class = "btn btn-primary btn-lg" disabled = "disabled">
+      Disabled Primary button
+   </button>
+</p>
+
+<p>
+   <a href = "#" class = "btn btn-default btn-lg" role = "button">
+      Link
+   </a>
+   
+   <a href = "#" class = "btn btn-default btn-lg disabled" role = "button">
+      Disabled Link
+   </a>
+</p>
+
+<p>
+   <a href = "#" class = "btn btn-primary btn-lg" role = "button">
+      Primary link
+   </a>
+   
+   <a href = "#" class = "btn btn-primary btn-lg disabled" role = "button">
+      Disabled Primary link
+   </a>
+</p>
+  <div class = "row" style = "padding: 91px 100px 19px 50px;">
+   <form class = "form-inline" role = "form">
+      
+      <div class = "form-group">
+         <label class = "sr-only" for = "email">Email address</label>
+         <input type = "email" class = "form-control" placeholder = "Enter email">
+      </div>
+      
+      <div class = "form-group">
+         <label class = "sr-only" for = "pass">Password</label>
+         <input type = "password" class = "form-control" placeholder = "Password">
+      </div>
+      
+   </form>
+</div>
+  <div class = "container" style = "padding: 40px;">
+   <div class = "row visible-on">
+      
+      <div class = "col-xs-6 col-sm-3" style = "background-color: #dedef8;
+         box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+         
+         <span class = "hidden-xs">Extra small</span>
+         <span class = "visible-xs">✔ Visible on x-small</span>
+      </div>
+      
+      <div class = "col-xs-6 col-sm-3" style = "background-color: #dedef8;
+         box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+         
+         <span class = "hidden-sm">Small</span>
+         <span class = "visible-sm">✔ Visible on small</span>
+      </div>
+      
+      <div class = "clearfix visible-xs"></div>
+      
+      <div class = "col-xs-6 col-sm-3" style = "background-color: #dedef8;
+         box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+         
+         <span class = "hidden-md">Medium</span>
+         <span class = "visible-md">✔ Visible on medium</span>
+      </div>
+      
+      <div class = "col-xs-6 col-sm-3" style = "background-color: #dedef8;
+         box-shadow: inset 1px -1px 1px #444, inset -1px 1px 1px #444;">
+         
+         <span class = "hidden-lg">Large</span>
+         <span class = "visible-lg">✔ Visible on large</span>
+      </div>
+      
+   </div>  
+</div>
+  <p>
+   <button type = "button" class = "btn btn-default">
+      <span class = "glyphicon glyphicon-sort-by-attributes"></span>
+   </button>
+   
+   <button type = "button" class = "btn btn-default">
+      <span class = "glyphicon glyphicon-sort-by-attributes-alt"></span>
+   </button>
+   
+   <button type = "button" class = "btn btn-default">
+      <span class = "glyphicon glyphicon-sort-by-order"></span>
+   </button>
+   
+   <button type = "button" class = "btn btn-default">
+      <span class = "glyphicon glyphicon-sort-by-order-alt"></span>
+   </button>
+</p>
+
+<button type = "button" class = "btn btn-default btn-lg">
+   <span class = "glyphicon glyphicon-user"></span>
+   
+   User
+</button>
+
+<button type = "button" class = "btn btn-default btn-sm">
+   <span class = "glyphicon glyphicon-user"></span> 
+   
+   User
+</button>
+
+<button type ="button" class = "btn btn-default btn-xs">
+   <span class = "glyphicon glyphicon-user"></span> 
+   
+   User
+</button>
+  <div class = "dropdown">
+   
+   <button type = "button" class = "btn dropdown-toggle" id = "dropdownMenu1" data-toggle = "dropdown">
+      Topics
+      <span class = "caret"></span>
+   </button>
+   
+   <ul class = "dropdown-menu pull-right" role = "menu" aria-labelledby = "dropdownMenu1">
+      <li role = "presentation">
+         <a role = "menuitem" tabindex = "-1" href = "#">Java</a>
+      </li>
+      
+      <li role = "presentation">
+         <a role = "menuitem" tabindex = "-1" href = "#">Data Mining</a>
+      </li>
+      
+      <li role = "presentation">
+         <a role = "menuitem" tabindex = "-1" href = "#">
+            Data Communication/Networking
+         </a>
+      </li>
+      
+      <li role = "presentation" class = "divider"></li>
+      
+      <li role = "presentation">
+         <a role = "menuitem" tabindex = "-1" href = "#">Separated link</a>
+      </li>
+   </ul>
+   
+</div>
+  <div class = "btn-group">
+   
+   <button type = "button" class = "btn btn-default dropdown-toggle" data-toggle = "dropdown">
+      Default 
+      <span class = "caret"></span>
+   </button>
+   
+   <ul class = "dropdown-menu" role = "menu">
+      <li><a href = "#">Action</a></li>
+      <li><a href = "#">Another action</a></li>
+      <li><a href = "#">Something else here</a></li>
+      
+      <li class = "divider"></li>
+      <li><a href = "#">Separated link</a></li>
+   </ul>
+</div>
+
+<div class = "btn-group">
+   <button type = "button" class = "btn btn-primary dropdown-toggle" data-toggle = "dropdown">
+      Primary 
+      <span class = "caret"></span>
+   </button>
+   
+   <ul class = "dropdown-menu" role = "menu">
+      <li><a href = "#">Action</a></li>
+      <li><a href = "#">Another action</a></li>
+      <li><a href = "#">Something else here</a></li>
+      
+      <li class = "divider"></li>
+      <li><a href = "#">Separated link</a></li>
+   </ul>
+   
+</div>
+  <div class = "row">
+   <div class = "col-sm-6 col-md-3">
+      <a href = "#" class = "thumbnail">
+         <img src = "/bootstrap/images/kittens.jpg" alt = "Generic placeholder thumbnail">
+      </a>
+   </div>
+   
+   <div class = "col-sm-6 col-md-3">
+      <a href = "#" class = "thumbnail">
+         <img src = "/bootstrap/images/kittens.jpg" alt = "Generic placeholder thumbnail">
+      </a>
+   </div>
+   
+   <div class = "col-sm-6 col-md-3">
+      <a href = "#" class = "thumbnail">
+         <img src = "/bootstrap/images/kittens.jpg" alt = "Generic placeholder thumbnail">
+      </a>
+   </div>
+   
+   <div class = "col-sm-6 col-md-3">
+      <a href = "#" class = "thumbnail">
+         <img src = "/bootstrap/images/kittens.jpg" alt = "Generic placeholder thumbnail">
+      </a>
+   </div>
+</div>
+  <div class = "row">
+   <div class = "col-sm-6 col-md-3">
+      <div class = "thumbnail">
+         <img src = "/bootstrap/images/kittens.jpg" alt = "Generic placeholder thumbnail">
+      </div>
+      
+      <div class = "caption">
+         <h3>Thumbnail label</h3>
+         <p>Some sample text. Some sample text.</p>
+         
+         <p>
+            <a href = "#" class = "btn btn-primary" role = "button">
+               Button
+            </a> 
+            
+            <a href = "#" class = "btn btn-default" role = "button">
+               Button
+            </a>
+         </p>
+      </div>
+   </div>
+   
+   <div class = "col-sm-6 col-md-3">
+      <div class = "thumbnail">
+         <img src = "/bootstrap/images/kittens.jpg" alt = "Generic placeholder thumbnail">
+      </div>
+      
+      <div class = "caption">
+         <h3>Thumbnail label</h3>
+         <p>Some sample text. Some sample text.</p>
+         
+         <p>
+            <a href = "#" class = "btn btn-primary" role = "button">
+               Button
+            </a> 
+            
+            <a href = "#" class = "btn btn-default" role = "button">
+               Button
+            </a>
+         </p>
+      </div>
+   </div>
+   
+   <div class = "col-sm-6 col-md-3">
+      <div class = "thumbnail">
+         <img src = "/bootstrap/images/kittens.jpg" alt = "Generic placeholder thumbnail">
+      </div>
+      
+      <div class = "caption">
+         <h3>Thumbnail label</h3>
+         <p>Some sample text. Some sample text.</p>
+         
+         <p>
+            <a href = "#" class = "btn btn-primary" role = "button">
+               Button
+            </a> 
+            
+            <a href = "#" class = "btn btn-default" role =" button">
+               Button
+            </a>
+         </p>
+      </div>
+   </div>
+   
+   <div class = "col-sm-6 col-md-3">
+      <div class = "thumbnail">
+         <img src = "/bootstrap/images/kittens.jpg" alt = "Generic placeholder thumbnail">
+      </div>
+      
+      <div class = "caption">
+         <h3>Thumbnail label</h3>
+         <p>Some sample text. Some sample text.</p>
+         
+         <p>
+            <a href = "#" class = "btn btn-primary" role = "button">
+               Button
+            </a> 
+            
+            <a href = "#" class = "btn btn-default" role = "button">
+               Button
+            </a>
+         </p>
+      </div>
+   </div>
+</div>
+  <div class = "alert alert-success">Success! Well done its submitted.</div>
+<div class = "alert alert-info">Info! take this info.</div>
+<div class = "alert alert-warning">Warning ! Dont submit this.</div>
+<div class = "alert alert-danger">Error ! Change few things.</div>
+  <script>
+  let message: string = 'Hello, World!';
+console.log(message);
+  </script>
+      <div class="container"> 
+      <h2>This is a web view that renders HTML</h2>
+      <h2>The panel below shows JS Console output</h2>
+      <hr/>
+      <h3 id="dateHeader">Click to set date</h3>
+      <br/>
+      <button onclick="clickHandler()" type="button" class="btn btn-primary">Set date</button>
+    </div>
+  </body>
+  <script>
+    console.info('Window loaded');
+    function clickHandler() {
+      console.log('Button clicked');
+      let el = document.getElementById("dateHeader")
+      el.innerHTML = new Date()
+    }
+  </script> 
+/*Program From Skyeagle*/
+
+
+<h2>JavaScript Arrays</h2>
+
+<p>Array indexes are zero-based, which means the first item is......</p>
+
+<p id="demo"></p>
+
+<script>
+var cars = ["Saab","Volvo","BMW"];
+
+document.getElementById("demo").innerHTML = cars[0];
+</script>
+</body>
+</html>
