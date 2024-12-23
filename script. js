@@ -1,0 +1,30 @@
+
+  function warn() {
+  var pin1 = prompt("This site is meant for learning purposes.\nExploit it\n\n\n\nEnter the pin to open");
+  if (pin1 == 1243) {
+    // You can replace this with the desired action, e.g., opening a new page.
+    window.open("https://arttunel.netlify.app/");
+  } else {
+    var xy = prompt("Wrong pin, try again");
+    if (xy != 1243) {
+      function deny() {
+        var div = document.createElement("div");
+        div.style.position = "fixed";
+        div.style.top = "0";
+        div.style.bottom = "0";
+        div.style.right = "0";
+        div.style.left = "0";
+        div.style.backgroundColor = "black";
+        div.style.color = "red";
+        div.style.textAlign = "center";
+        div.innerHTML = "<h1>ACCESS DENIED<br><br><br>SITE LOCKED</h1>";
+        document.body.appendChild(div);
+      }
+      deny();
+    } else {
+      alert("Access granted!");
+      window.open("https://example.com", "_blank");
+    }
+  }
+}
+warn();
